@@ -4,15 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/song3"
+    tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="95dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Make Your Vibes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="167dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="monospace"
+        android:text="Add To Playlist"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Dont hold yourself down, invoke your inner musician and make a playlist of a life time of what you love the most"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
