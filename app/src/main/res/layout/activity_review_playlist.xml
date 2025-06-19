@@ -35,54 +35,33 @@
         app:layout_constraintStart_toEndOf="@+id/MainPage"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/categories"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="150dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Review"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/Details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="484dp"
-        android:layout_marginEnd="172dp"
-        android:backgroundTint="#000000"
-        android:fontFamily="monospace"
-        android:text="Show List"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/Average"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/categories" />
-
-    <Button
-        android:id="@+id/Average"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="582dp"
         android:layout_marginEnd="13dp"
         android:backgroundTint="#000000"
         android:fontFamily="monospace"
-        android:text="Avergae"
+        android:text="Show list"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Details"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/PlaylistView"
+        android:layout_width="409dp"
+        android:layout_height="482dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#FFFFFF"
+        android:cacheColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
