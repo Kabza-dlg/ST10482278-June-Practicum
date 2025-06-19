@@ -5,15 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
+class PlaylistDetails : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_playlist_details)
 
-        val PlayListPage1 = findViewById<Button>(R.id.PlayListPage1)
+        val Add = findViewById<Button>(R.id.NextPage)
+        val Nextpage = findViewById<Button>(R.id.NextPage)
 
-        PlayListPage1.setOnClickListener {
-            val intent = Intent( this , PlaylistDetails::class.java)
+        Nextpage.setOnClickListener {
+            val intent = Intent( this , ReviewPlaylist::class.java)
             startActivity(intent)
         }
     }

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ST10482278IMADPracticum"
         tools:targetApi="31">
         <activity
+            android:name=".ReviewPlaylist"
+            android:exported="false" />
+        <activity
+            android:name=".PlaylistDetails"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

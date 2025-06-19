@@ -26,11 +26,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/PlayListPage1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="153dp"
-        android:layout_marginTop="353dp"
+        android:layout_marginTop="435dp"
         android:layout_marginEnd="167dp"
         android:backgroundTint="#000000"
         android:fontFamily="monospace"
